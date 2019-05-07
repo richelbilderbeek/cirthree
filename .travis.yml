@@ -7,7 +7,9 @@ cache: packages
 r_github_packages:
   - jimhester/covr
   - jimhester/lintr
+  - MangoTheCat/goodpractice
 
 after_success:
   - Rscript -e "covr::codecov()"
   - Rscript -e "lintr::expect_lint_free()"
+  - Rscript -e "goodpractice::gp()"
