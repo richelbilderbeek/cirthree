@@ -13,8 +13,7 @@ LazyData: true
 LinkingTo: 
     Rcpp
 Imports: 
-    Rcpp,
-    testthat
+    Rcpp
 Suggests: 
     lintr,
     testthat
