@@ -5,7 +5,7 @@ double calc_sum_cpp(const std::vector<double>& values)
 {
   //A stub
 	double dSum = 0;
-	for (size_t i = 0; i < size(v); i++)
+	for (int i = 0; i < values.size(); i++)
 	{
 		dSum += v[i];
 	}
