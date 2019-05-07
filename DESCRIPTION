@@ -1,7 +1,8 @@
 Package: cirthree
 Title: What the Package Does (One Line, Title Case)
 Version: 0.0.0.9000
-Authors@R: person(given = "First",
+Authors@R: 
+    person(given = "First",
            family = "Last",
            role = c("aut", "cre"),
            email = "first.last@example.com")
@@ -9,8 +10,10 @@ Description: What the package does (one paragraph).
 License: GPL-3
 Encoding: UTF-8
 LazyData: true
-LinkingTo: Rcpp
-Imports:
+LinkingTo: 
     Rcpp
-RoxygenNote: 5.0.1
-Suggests: testthat
+Imports: 
+    Rcpp
+RoxygenNote: 6.1.1
+Suggests: 
+    testthat
