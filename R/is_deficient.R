@@ -1,7 +1,22 @@
 # This function checks if a number is deficient
-is_deficient <- function() {
+is_deficient <- function(value, language = "C++") {
 
- is_deficient <- TRUE
+ # Get the proper divisors
+ divisors <- get_proper_divisors(value)
+
+ # Sum them
+ if(language == "C++") {
+
+  sum_divisors <- calc_sum_r(divisors)
+
+ } else if(language == "R") {
+
+  sum_divisors <- calc_sum_cpp(divisors)
+
+ }
+
+ # If the sum of divisors is smaller than the initial number, the number is deficient
+ is_deficient <- ifelse(sum_divisors < value, TRUE, FALSE)
 
  return(is_deficient)
 
