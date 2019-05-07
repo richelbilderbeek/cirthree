@@ -1,15 +1,13 @@
+# R for travis: see documentation at https://docs.travis-ci.com/user/languages/r
+
 language: R
 sudo: false
 cache: packages
 
 r_github_packages:
   - jimhester/covr
+  - jimhester/lintr
 
 after_success:
   - Rscript -e "covr::codecov()"
-  
-r_github_packages:
-  - MangoTheCat/goodpractice
-
-after_success:
-  - Rscript -e "goodpractice::gp()"
+  - Rscript -e "lintr::expect_lint_free()"
