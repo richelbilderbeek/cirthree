@@ -1,6 +1,11 @@
 #calc_sum_r
 #Calculates the sum of a numeric
 calc_sum_r <- function(x){
+
+  if(length(values) == 0){
+    return 0
+  }
+
   if (!is.numeric(x)) {
     stop("'values' must be numeric")
   }
