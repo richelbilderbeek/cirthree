@@ -13,7 +13,8 @@ LazyData: true
 LinkingTo: 
     Rcpp
 Imports: 
-    Rcpp
+    Rcpp,
+    testthat
 Suggests: 
     lintr
 RoxygenNote: 6.1.1
