@@ -4,15 +4,10 @@ language: R
 sudo: false
 cache: packages
 
-
 r_github_packages:
   - jimhester/covr
-
-after_success:
-  - Rscript -e "covr::codecov()"
-
-r_github_packages:
   - jimhester/lintr
 
 after_success:
+  - Rscript -e "covr::codecov()"
   - Rscript -e "lintr::expect_lint_free()"
