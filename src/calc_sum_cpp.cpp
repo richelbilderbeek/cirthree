@@ -1,6 +1,6 @@
-#include "calc_sum.h"
+#include "calc_sum_cpp.h"
 
-double calc_sum(const std::vector<double>&)
+double calc_sum_cpp(const std::vector<double>&)
 {
   //A stub
   return 0.0;

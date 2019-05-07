@@ -8,7 +8,7 @@
 //' @return the sum
 //' @author Richèl J.C. Bilderbeek
 // [[Rcpp::export]]
-double calc_sum(const std::vector<double>& v);
+double calc_sum_cpp(const std::vector<double>& values);
 
 #endif // CALC_ACT_CPP_H
 

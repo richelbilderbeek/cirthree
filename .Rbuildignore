@@ -1,3 +1,5 @@
 ^\.travis\.yml$
 ^cirthree\.Rproj$
 ^\.Rproj\.user$
+^LICENSE$
+^lesson_3\.png$
