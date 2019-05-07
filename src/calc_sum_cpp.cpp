@@ -7,7 +7,8 @@ double calc_sum_cpp(const std::vector<double>& values)
 	double dSum = 0;
 	for (int i = 0; i < values.size(); i++)
 	{
-		dSum += v[i];
+		dSum += values[i];
 	}
+
   return dSum;
 }
