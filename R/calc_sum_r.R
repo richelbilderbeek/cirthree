@@ -1,3 +1,7 @@
+#' @useDynLib cirthree, .registration = TRUE
+#' @importFrom Rcpp sourceCpp
+NULL
+
 #calc_sum_r
 #Calculates the sum of a numeric
 calc_sum_r <- function(x){
@@ -7,6 +11,3 @@ calc_sum_r <- function(x){
   sum <- sum(x)
   sum
 }
-
-x <-c(1, "dd", 5)
-is.integer(x[1])

@@ -6,14 +6,6 @@
 #' @return the sum
 #' @author Richèl J.C. Bilderbeek
 calc_sum_cpp <- function(values) {
-    .Call('cirthree_calc_sum_cpp', PACKAGE = 'cirthree', values)
-}
-
-#' Get proper divisors
-#' @param n the number to euvfwekyb
-#' @return the proper divisors
-#' @author Richèl J.C. Bilderbeek
-get_proper_divisors <- function(n) {
-    .Call('cirthree_get_proper_divisors', PACKAGE = 'cirthree', n)
+    .Call(`_cirthree_calc_sum_cpp`, values)
 }
 
