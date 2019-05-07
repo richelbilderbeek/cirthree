@@ -6,6 +6,6 @@
 #' @return the sum
 #' @author Richèl J.C. Bilderbeek
 calc_sum_cpp <- function(values) {
-    .Call('_cirthree_calc_sum_cpp', PACKAGE = 'cirthree', values)
+    .Call('cirthree_calc_sum_cpp', PACKAGE = 'cirthree', values)
 }
 

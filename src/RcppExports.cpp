@@ -7,7 +7,7 @@ using namespace Rcpp;
 
 // calc_sum_cpp
 double calc_sum_cpp(const std::vector<double>& values);
-RcppExport SEXP _cirthree_calc_sum_cpp(SEXP valuesSEXP) {
+RcppExport SEXP cirthree_calc_sum_cpp(SEXP valuesSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -15,14 +15,4 @@ BEGIN_RCPP
     rcpp_result_gen = Rcpp::wrap(calc_sum_cpp(values));
     return rcpp_result_gen;
 END_RCPP
-}
-
-static const R_CallMethodDef CallEntries[] = {
-    {"_cirthree_calc_sum_cpp", (DL_FUNC) &_cirthree_calc_sum_cpp, 1},
-    {NULL, NULL, 0}
-};
-
-RcppExport void R_init_cirthree(DllInfo *dll) {
-    R_registerRoutines(dll, NULL, CallEntries, NULL, NULL);
-    R_useDynamicSymbols(dll, FALSE);
 }
