@@ -16,3 +16,14 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP
 }
+// get_proper_divisors
+std::vector<int> get_proper_divisors(const int n);
+RcppExport SEXP cirthree_get_proper_divisors(SEXP nSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject rcpp_result_gen;
+    Rcpp::RNGScope rcpp_rngScope_gen;
+    Rcpp::traits::input_parameter< const int >::type n(nSEXP);
+    rcpp_result_gen = Rcpp::wrap(get_proper_divisors(n));
+    return rcpp_result_gen;
+END_RCPP
+}
